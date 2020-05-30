@@ -19,7 +19,6 @@ process.env.CADUCIDAD_TOKEN = 60 * 60 * 24 * 30;
 
 process.env.SEED = process.env.SEED || 'security-local';
 
-
 // ============================
 //  Base de datos
 // ============================
@@ -31,3 +30,9 @@ if (process.env.NODE_ENV === 'dev') {
     urlDB = process.env.MONGO_URI;
 }
 process.env.URLDB = urlDB;
+
+// ============================
+//  Google Client ID
+// ============================
+
+process.env.CLIENT_ID = process.env.CLIENT_ID || '106823288642-ppdlfp857sbojcd89ki041q0ockfi6oi.apps.googleusercontent.com'
