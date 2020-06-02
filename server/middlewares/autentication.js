@@ -34,7 +34,7 @@ let adminRoleVerification = (req, res, next) => {
         return res.status(500).json({
             ok: false,
             err: {
-                message: 'The user role is not administrato'
+                message: 'The user role is not administrator'
             }
         });
     }
