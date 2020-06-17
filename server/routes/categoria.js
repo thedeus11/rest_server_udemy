@@ -32,6 +32,7 @@ app.get('/categoria', tokenVerification, (req, res) => {
 app.get('/categoria/:id', tokenVerification, (req, res) => {
 
     let id = req.params.id;
+    
     Categoria.findById(id, (err, categoriaDB) => {
         if (err) {
             return res.status(400).json({
